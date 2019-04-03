@@ -8,6 +8,8 @@ import org.springframework.stereotype.Component;
 public class TestExecute implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
-        TestOneScala.mongo();
+        TestOneScala.mongo3();
+       // TestOneScala.mongo2();
+        //TestOneScala.mongo();
     }
 }
