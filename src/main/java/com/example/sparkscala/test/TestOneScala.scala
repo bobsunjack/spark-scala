@@ -34,6 +34,8 @@ object TestOneScala {
       .set("spark.mongodb.output.uri", "mongodb://127.0.0.1/capturedb2.capture_m")
     val sc = new SparkContext(conf)
     val rdd = MongoSpark.load(sc)
+    val df = rdd.toDF()
+    df.printSchema()
 
     println(rdd.count)
     println(rdd.first.toString())
