@@ -92,7 +92,7 @@ object Test3 {
      case class My(name:String,age:Int){
 
      }
-    val z= My("tt",1);
+    val z1= My("tt",1);
 
 
   }
